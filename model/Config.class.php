@@ -3,9 +3,9 @@
 class Config{
 
     const SITE_URL = "http://localhost",
-          SITE_PASTA = "lojaVirtual",
+          SITE_PASTA = "",
           SITE_NOME = "Loja Eleerry",
-          SITE_EMAIL_ADM = "luisblack.lr@gmail.com";
+          SITE_EMAIL_ADM = "eleerry.as@gmail.com";
 
     const BD_HOST = "localhost",
           BD_USER = "root",
@@ -13,13 +13,13 @@ class Config{
           BD_BANCO = "lojaeleerry";
 
     CONST EMAIL_HOST = "smtp.gmail.com",
-          EMAIL_USER = "luisblack.lr@gmail.com",
+          EMAIL_USER = "eleerry.as@gmail.com",
           EMAIL_NOME = "Contato Loja Eleérry",
-          EMAIL_SENHA = "lojadoeleerry",
+          EMAIL_SENHA = "lojaVirtual2485",
           EMAIL_PORTA = 587,
           EMAIL_SMTPAUTH = true,
           EMAIL_SMTPSECURETY = "tls",
-          EMAIL_COPIA = "luisblack.lr@gmail.com";
+          EMAIL_COPIA = "eleerry.as@gmail.com";
 }
 
 ?>
