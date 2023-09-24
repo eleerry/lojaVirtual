@@ -19,7 +19,7 @@ class Rotas {
     }
 
     static function pag_Carrinho(){
-        return self::get_SiteHOME()  . '/carrinho';
+        return self::get_SiteHOME()  . 'carrinho';
     }
 
     static function get_Pagina(){
