@@ -1,1 +1,6 @@
-<h2>contato</h2>
+<?php 
+$smarty = new Template();
+$smarty->assign('CONTATO', '');
+$smarty->display('contato.tpl');
+
+?>

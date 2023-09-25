@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.46, created on 2023-09-25 01:16:50
+/* Smarty version 3.1.46, created on 2023-09-25 02:26:20
   from 'C:\lojaVirtual\view\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.46',
-  'unifunc' => 'content_6510df82317f41_08429053',
+  'unifunc' => 'content_6510efcca676b9_78313760',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9b9691e6a5c4a5469c62e45853a47794f863d58c' => 
     array (
       0 => 'C:\\lojaVirtual\\view\\index.tpl',
-      1 => 1695604608,
+      1 => 1695608775,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6510df82317f41_08429053 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6510efcca676b9_78313760 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 
 <html lang="pt-br">
@@ -41,7 +41,8 @@ function content_6510df82317f41_08429053 (Smarty_Internal_Template $_smarty_tpl)
     <!-- meu aquivo pessoal de CSS-->
     <link href="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
 /tema/css/tema.css" rel="stylesheet" type="text/css"/>
-    <title>Loja Eleérry</title>
+    <title><?php echo $_smarty_tpl->tpl_vars['TITULO_SITE']->value;?>
+</title>
      <!-- HTML5 shim e Respond.js para suporte no IE8 de elementos HTML5 e media queries -->
     <!-- ALERTA: Respond.js não funciona se você visualizar uma página file:// -->
     <!--[if lt IE 9]>

@@ -10,7 +10,7 @@
     <script src="{$GET_TEMA}/tema/js/bootstrap.min.js" type="text/javascript"></script>
     <!-- meu aquivo pessoal de CSS-->
     <link href="{$GET_TEMA}/tema/css/tema.css" rel="stylesheet" type="text/css"/>
-    <title>Loja Eleérry</title>
+    <title>{$TITULO_SITE}</title>
      <!-- HTML5 shim e Respond.js para suporte no IE8 de elementos HTML5 e media queries -->
     <!-- ALERTA: Respond.js não funciona se você visualizar uma página file:// -->
     <!--[if lt IE 9]>
