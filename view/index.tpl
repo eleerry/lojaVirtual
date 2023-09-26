@@ -140,8 +140,10 @@
             
             <!-- começa div rodape -->
             <div class="row" id="rodape">
-            
-            
+                <center>
+                    <h4>{$TITULO_SITE}</h4>
+                    <p>Todos os direitos Reservados!</p>
+                </center>
             </div><!-- fim div rodape-->
             
             

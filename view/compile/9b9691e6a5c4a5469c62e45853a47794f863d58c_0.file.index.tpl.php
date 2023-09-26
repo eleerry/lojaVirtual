@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.46, created on 2023-09-25 02:26:20
+/* Smarty version 3.1.46, created on 2023-09-26 03:12:08
   from 'C:\lojaVirtual\view\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.46',
-  'unifunc' => 'content_6510efcca676b9_78313760',
+  'unifunc' => 'content_65124c086bfc32_23377436',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9b9691e6a5c4a5469c62e45853a47794f863d58c' => 
     array (
       0 => 'C:\\lojaVirtual\\view\\index.tpl',
-      1 => 1695608775,
+      1 => 1695697924,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6510efcca676b9_78313760 (Smarty_Internal_Template $_smarty_tpl) {
+function content_65124c086bfc32_23377436 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 
 <html lang="pt-br">
@@ -181,8 +181,11 @@ function content_6510efcca676b9_78313760 (Smarty_Internal_Template $_smarty_tpl)
             
             <!-- começa div rodape -->
             <div class="row" id="rodape">
-            
-            
+                <center>
+                    <h4><?php echo $_smarty_tpl->tpl_vars['TITULO_SITE']->value;?>
+</h4>
+                    <p>Todos os direitos Reservados!</p>
+                </center>
             </div><!-- fim div rodape-->
             
             
