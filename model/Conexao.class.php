@@ -21,7 +21,7 @@ class Conexao extends Config{
 
     private function Conectar(){
         $options = array(
-            PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf-8",
+            PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8",
             PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING
         );
 
