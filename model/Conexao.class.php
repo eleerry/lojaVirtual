@@ -9,6 +9,14 @@ class Conexao extends Config{
         $this->senha = self::BD_SENHA;
         $this->banco = self::BD_BANCO;
         $this->prefix = self::BD_PREFIX;
+
+        try{
+            if($this->Conectar() == null){
+                $this->Conectar();
+            }
+        } catch(Exception $e){
+            exit($e->getMessage() . '<h2>Erro ao conectar com o banco de dados!</h2>');
+        }
     }
 
     private function Conectar(){
@@ -16,7 +24,7 @@ class Conexao extends Config{
             PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf-8",
             PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING
         );
-        
+
         $link = new PDO("mysql:host={$this->host};dbname={$this->banco}", $this->user,$this->senha, $options);
     }
         

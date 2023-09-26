@@ -13,6 +13,8 @@ $smarty->assign('PAG_CONTATO', Rotas::pag_Contato());
 $smarty->assign('PAG_MINHACONTA', Rotas::pag_MinhaConta());
 $smarty->assign('TITULO_SITE', Config::SITE_NOME);
 
+$dados = new Conexao();
+
 $smarty->display('index.tpl');
 
 ?>
