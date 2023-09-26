@@ -26,6 +26,16 @@ class Conexao extends Config{
         );
 
         $link = new PDO("mysql:host={$this->host};dbname={$this->banco}", $this->user,$this->senha, $options);
+        return $link;
+    }
+
+    function ExecuteSQL($query, array $params = NULL){
+        $this->obj = $this->Conectar()->prepare($query);
+        return $this->obj->execute();
+    }
+
+    function ListarDados(){
+        return $this->obj->fetch(PDO::FETCH_ASSOC);
     }
         
 }

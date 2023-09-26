@@ -14,6 +14,12 @@ $smarty->assign('PAG_MINHACONTA', Rotas::pag_MinhaConta());
 $smarty->assign('TITULO_SITE', Config::SITE_NOME);
 
 $dados = new Conexao();
+$sql = "SELECT * FROM produtos";
+$dados->ExecuteSQL($sql);
+$lista = $dados->ListarDados();
+echo "<pre>";
+var_dump($lista);
+echo "</pre>";
 
 $smarty->display('index.tpl');
 
