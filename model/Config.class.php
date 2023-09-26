@@ -10,7 +10,8 @@ class Config{
     const BD_HOST = "localhost",
           BD_USER = "root",
           BD_SENHA = "",
-          BD_BANCO = "lojaeleerry";
+          BD_BANCO = "lojaeleerry",
+          BD_PREFIX = '';
 
     CONST EMAIL_HOST = "smtp.gmail.com",
           EMAIL_USER = "eleerry.as@gmail.com",
