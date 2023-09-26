@@ -12,7 +12,12 @@ class Conexao extends Config{
     }
 
     private function Conectar(){
-        $link = new PDO("mysql:host={$this->host};dbname={$this->banco}", $this->user,$this->senha);
+        $options = array(
+            PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf-8",
+            PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING
+        );
+        
+        $link = new PDO("mysql:host={$this->host};dbname={$this->banco}", $this->user,$this->senha, $options);
     }
         
 }
