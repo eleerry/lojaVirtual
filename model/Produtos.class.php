@@ -12,7 +12,8 @@ class Produtos extends Conexao{
                   INNER JOIN {$this->prefix}categorias c
                   ON p.pro_categoria = c.cate_id";
 
-        $query .= "ORDER BY p.pro_id DESC";
+        //$query .= "ORDER BY p.pro_id DESC";
+        $this->ExecuteSQL($query);
         $this->getLista();
     }
 
