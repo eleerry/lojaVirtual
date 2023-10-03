@@ -45,7 +45,7 @@ class Conexao extends Config{
     }
 
     function GetItens(){
-        return $this->obj->itens();
+        return $this->itens;
     }
         
 }
