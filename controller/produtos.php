@@ -1,10 +1,11 @@
-<h2>Está é a pagina do produtos</h2>
-
 <?php 
+
+$smarty = new Template();
 
 $produtos = new Produtos();
 $produtos->GetProdutos();
 
-var_dump($produtos->GetItens());
+$smarty->assign('PRO', $produtos->GetItens());
+$smarty->display('produtos.tpl');
 
 ?>
